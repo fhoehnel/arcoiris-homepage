@@ -1,0 +1,229 @@
+<html>
+  <head>
+    <meta name="author" content="Frank Hoehnel"> 
+
+    <meta name="description" content="arcoiris blog is an open source blog server as Java webapp with maps integration and Android client."> 
+
+    <meta name="keywords" content="arcoiris, blog, Java, webapp, maps, Android, servlet, diary, intranet, open source"> 
+	
+    <meta name="robots" content="index, follow">
+	
+    <link rel="SHORTCUT ICON" href="images/arcoiris-icon.png">  
+    
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	
+	<title>arcoiris blog - blogging server Java webapp with Android client (open source)</title>
+  </head>
+
+  <body>
+    <div class="leftColumn">
+      <div class="logoCont">
+	    <div class="logoPic">
+	      <img src="images/arcoiris-book.png" style="width:144px;heigt:122px"></img>	
+
+	      <div style="padding:0 10px 10px 0">
+            <span style="color:#e080ff">a</span>
+            <span style="color:#c0a0ff">r</span>
+            <span style="color:#b0b0ff">c</span>
+            <span style="color:#c0ffff">o</span>
+            <span style="color:#c0ffc0">i</span>
+            <span style="color:#f0f0a0">r</span>
+            <span style="color:#ffc0a0">i</span>
+            <span style="color:#ff8080">s</span>
+	      </div>
+		</div>
+		
+      </div>
+	  
+	  <div class="loginCont">
+        <form method="post" action="https://www.webfilesys.de/arcoiris-blog/servlet" target="_blank">
+          <input type="hidden" name="command" value="login">
+		  
+          <ul>
+		    <li>
+              <label>Userid:</label>
+            </li>
+		    <li>
+              <input type="text" name="userid" maxlength="30" value="demo" />
+            </li>
+
+		    <li>
+              <label>Password:</label>
+            </li>
+		    <li>
+              <input type="password" name="password" maxlength="30" value="guest" />
+            </li>
+
+			<li>
+              <input type="submit" value="Login" />
+			</li>
+
+			<li>
+              <a class="registerLink" 
+			      href="https://www.webfilesys.de/arcoiris-blog/servlet?command=registerSelf" target="_blank">register new account</a>
+			</li>
+			
+		  </ul>
+		  
+		</form>
+	  </div>
+	  
+	  <div class="menuCont">
+	    <ul>
+		  <!--
+		  <li>
+		    <a href="http://www.webfilesys.de/arcoiris-blog/servlet?command=logout" target="_blank">Demo Blog Login</a>
+			<br/>
+			<span class="loginData">(userid: demo &nbsp; password: guest)</span>
+		  </li>
+		  -->
+		  <li>
+		    <a href="https://www.webfilesys.de:443/arcoiris-blog/visitor/flowerblog-1/8bfe6907-30ce-4010-86c1-40c5d44e9c5b" target="_blank">Sample Blog (Visitor)</a>
+		  </li>
+		  <li>
+		    <a href="#features">Features</a>
+		  </li>
+		  <li>
+		    <a href="https://www.webfilesys.de:443/arcoiris-blog/visitor/screenshots-arcoiris-1/07f3a11a-1058-436e-91e1-22dc34eed911" target="_blank">Screenshots</a>
+		  </li>
+		  <li>
+		    <a href="distrib/releasenotes.html" target="_blank">Release Notes</a>
+          </li>
+		  <li>
+		    <a href="#android">Android client app</a>
+		  </li>
+		  <li>
+		    <a href="https://www.webfilesys.de:443/webfilesys/servlet?command=silentLogin&arcoiris-1=f39561d4-3175-4909-98e1-f18d7b40767e" target="_blank">Download</a>
+		  </li>
+		  <li>
+		    <a href="https://github.com/fhoehnel/arcoiris" target="_blank">Source Code</a>
+		  </li>
+	    </ul>
+	  </div>
+	  
+	</div>
+	
+	<div class="mainCont">
+	  
+	  <h1>arcoiris blog</h1>
+	  
+	  <div class="screenshotCont">
+	
+	    <div class="screenshot rotateLeft">
+	      <img src="screenshots/screenshot1.jpg" />
+	    </div>
+	    <div class="screenshot">
+	      <img src="screenshots/screenshot2.jpg" />
+	    </div>
+	    <div class="screenshot rotateRight">
+	      <img src="screenshots/screenshot3.jpg" />
+	    </div>
+	
+	  </div>
+
+	  <div class="mainText">
+
+        <h3>New in Release 2.21.0 (13 Feb 2021)</h3>
+
+        New overview page shows thumbnails of all blog pictures of all days.
+        <br/>
+        E-mail notification on new answers for comments.
+        <br/>
+        Share link to single blog picture.
+        <br/>
+        Waypoint support for GPX viewer.
+	  
+        <a name="features"><h2>Features</h2></a>
+        <ul>
+		  <li>standard Java webapp to be deployed in any servlet container</li>
+		  <li>no database required - all data (except the pictures) are stored in cached XML files</li>
+		  <li>automatic downscaling of uploaded pictures to thumbnail and full blog size</li>
+		  <li>performance- and memory-optimized presentation of pictures (thumbnails first, replaced dynamically by full size on scroll)</li>
+		  <li>public URL for visitors</li>
+		  <li>optional staged publication of new entries (extra release step)
+		  <li>visitors can add comments, new comments marked for blog author</li>
+		  <li>like-function for visitors</li>
+		  <li>subscribe function to notify visitors about new blog entries via e-mail</li>
+		  <li>attach files to blog entries</li>
+		  <li>Geotrack viewer shows GPX tracks on Google Maps</li>
+		  <li>search function</li>
+		  <li>automatic extraction of GPS location data from pictures (Exif-data of JPEG images)</li>
+		  <li>presentation of GPS locations on Google Maps, Open Street Map and in Google earth</li>
+		  <li>choice of different layouts (via different CSS)</li>
+		  <li>select a blog picture as title picture</li>
+		  <li>auto-rotation of blog pictures according to Exif orientation flag</li>
+		  <li>explicit rotation of pictures by blog author</li>
+		  <li>date selection via calendar, days with entries are highlighted</li>
+		  <li>sort order as blog (newest entry first) or as diary (oldest entry first)</li>
+                  <li>overview page shows thumbnails of all blog pictures</li>
+                  <li>share a link to a single blog picture or to the blog positioned at a certain entry</li>
+		  <li>visitor and comment statistics</li>
+		  <li>optional self-registration of users or registration by admin</li>
+		  <li>disk quota inspection with e-mail notification to admins</li>
+		  <li>supported languages: English, Deutsch, Español</li>
+		  <li>source code available on github</li>
+		</ul>
+		
+        <a name="android"><h2>Android client app</h2></a>
+
+		The app for Android allows to post blog entries directly from a Smartphone or tablet. 
+		The pictures are being scaled down to blog size before they are transferred to the arcoiris blog server
+		thus reducing the amount of data being sent. In offline mode new blog entries are stored on the mobile device and can be sent to the server 
+		when a network connection becomes available.
+		<br/>
+		<a href="screenshots/Android-client.png" target="_blank"><img src="screenshots/small/Android-client.png" class="screenshot"/></a>
+
+        <a name="license"><h2>License</h2></a>
+  
+	    <p>
+	    arcoiris blog ist distributed under the GPL 3.0 license. 
+		</p>
+		<p>
+		Additional license restriction: The link &quot;about arcoiris blog&quot; on the login screen, which shows an info window 
+		linking to the arcoiris homepage, must not be removed!
+        </p>
+		
+		<a name="3rdPartySpoftware"><h2>Included Software from other authors</h2></a>
+		
+		<p>		
+        The MediaUtil framework (http://mediachest.sourceforge.net/mediautil) written by Dmitriy Rogatkin and Suresh Mahalingam
+		is used for lossless JPEG image transformation.
+        </p>
+		<p>
+        A library from Drew Noakes called ExifExtractor is used to extract EXIF data from digicam pictures.
+        </p>
+        <p>
+		XML and XSLT libraries from the Apache projects Xerces and Xalan are used.
+		</p>
+        <p>
+        A PNG encoder written by J. David Eisenberg (KeyPoint Software) is used for image transformation.
+        </p>
+		<p>
+        A Javascript calendar from Matt Kruse is used for the date selection.
+        </p>
+        <p>
+		Browsers that do not support XSLT or have no Javascript interface to the XSLT engine
+        are using the Google Javascript XSLT library ajaxslt for partial page rendering.
+        </p>
+        <p>
+		arcoiris blog uses the Google Maps API to select and display geographic locations.
+        </p>
+        <p>
+		The icon font from Font Awesome (http://fortawesome.github.io/Font-Awesome) is included.
+		</p>
+		
+		<a name="contact"><h2>Contact the author</h2></a>
+		
+		<p>
+		If you find a bug or have suggestions for improvements please contact the author at 
+		<a href="mailto:frank_hoehnel@hotmail.com">frank_hoehnel@hotmail.com</a> .
+		</p>
+		
+		<br/>
+		
+	  </div>
+	  
+	</div>
+	
+  </body>
+</html>

@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kite One'), local('KiteOne-Regular'), url(../fonts/GoogleKiteOne.woff) format('woff');
+}
+
+html {
+    background-color: #f0f0f0;
+    background: linear-gradient(to right, #b0b0b0, #f0f0f0);	
+}
+
+body {
+	font-family: 'Kite One';
+	font-size: 16px;
+    background: linear-gradient(to bottom right, #707070, #f0f0f0);	
+	margin: 0;
+}
+
+h1 {
+	font-size: 64px;
+	color: #404040;
+	text-shadow: 0 2px 3px #b0b0b0;
+}
+
+div.leftColumn {
+    text-align: right;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+div.logoCont {
+    background-image: url("../images/rainbow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+	right: 10px;
+    width: 300px;
+	height: 250px;
+}
+
+div.logoPic {
+    position: relative;
+	right: 10px;
+    top: 80px;
+}
+
+div.logoPic span {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+div.mainCont {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 40px;
+	max-width: 700px;
+}
+
+div.screenshotCont {
+	position: relative;
+	left: 200px;
+}
+
+div.rotateLeft {
+    transform: rotate(340deg);	
+    -moz-transform: rotate(340deg);
+    -ms-transform: rotate(340deg);
+    -o-transform: rotate(340deg);
+    -webkit-transform: rotate(340deg);
+	left: -150px;
+}
+
+div.rotateRight {
+    transform: rotate(20deg);	
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+	left: 150px;
+}
+
+div.screenshot {
+	position: absolute;
+	border: 10px solid #ffffff;
+	top: 0;
+}
+
+div.menuCont {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+div.menuCont ul {
+	list-style-type: none;
+	text-align: left;
+	padding: 0;
+}
+
+div.menuCont ul li {
+    padding: 12px 0 12px 10px;
+}
+
+div.menuCont ul li a {
+	font-size: 20px;
+	font-weight: bold;
+    color: #ffffa0;
+    text-decoration: none;
+}
+
+div.menuCont ul li a:hover {
+	text-decoration: underline;
+    color: #8060c0;
+}
+
+div.loginCont {
+	margin-top: 20px;
+	margin-left: 10px;
+	border: 1px solid #606060;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #909090;
+	width: 220px;
+}
+
+div.loginCont ul {
+	list-style-type: none;
+	text-align: left;
+	padding: 0;
+}
+
+div.loginCont ul li {
+    padding: 4px 0 4px 10px;
+}
+
+div.loginCont label {
+	font-size: 16px;
+    color: #ffffa0;
+}
+
+div.loginCont input {
+    border: 1px solid #404040;
+    border-radius: 6px;
+	height: 32px;
+	padding: 2px;
+	width: 160px;
+	font-size: 16px;
+}
+
+div.loginCont input[type="submit"] {
+    width: 120px;
+	margin-top: 10px;
+}
+
+span.loginData {
+	font-size: 16px;
+    color: #ffffa0;
+}
+
+a.registerLink {
+    color: #ffffa0;
+	text-decoration: none;
+}
+
+a.registerLink:hover {
+    color: #8060c0;
+	text-decoration: underline;
+}
+
+div.mainText {
+    position: relative;
+	top: 600px;
+	min-width: 700px;
+}
+
+h2 {
+	font-size: 26px;
+	color: #404040;
+	text-shadow: 0 2px 3px #ffffff;
+}
+
+img.screenshot {
+    border: 2px ridge #404040;
+	margin: 10px 0 0 10px;
+}
