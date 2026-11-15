@@ -35,8 +35,9 @@
 		
       </div>
 	  
+      <!--
 	  <div class="loginCont">
-        <form method="post" action="https://www.webfilesys.de/arcoiris-blog/servlet" target="_blank">
+        <form method="post" action="https://webfilesys.ddns.net/arcoiris-blog/servlet" target="_blank">
           <input type="hidden" name="command" value="login">
 		  
           <ul>
@@ -51,23 +52,24 @@
               <label>Password:</label>
             </li>
 		    <li>
-              <input type="password" name="password" maxlength="30" value="guest" />
+              <input type="password" name="password" maxlength="30" value="****" />
             </li>
 
 			<li>
               <input type="submit" value="Login" />
 			</li>
-
+ 
 			<li>
               <a class="registerLink" 
-			      href="https://www.webfilesys.de/arcoiris-blog/servlet?command=registerSelf" target="_blank">register new account</a>
+			      href="https://webfilesys.ddns.net/arcoiris-blog/servlet?command=registerSelf" target="_blank">register new account</a>
 			</li>
 			
 		  </ul>
 		  
 		</form>
 	  </div>
-	  
+      -->
+  
 	  <div class="menuCont">
 	    <ul>
 		  <!--
@@ -78,13 +80,13 @@
 		  </li>
 		  -->
 		  <li>
-		    <a href="https://www.webfilesys.de:443/arcoiris-blog/visitor/flowerblog-1/8bfe6907-30ce-4010-86c1-40c5d44e9c5b" target="_blank">Sample Blog (Visitor)</a>
+		    <a href="https://webfilesys.ddns.net:443/arcoiris-blog/visitor/demo-2/c1685138-c971-45f8-92e0-11560d88e8f2" target="_blank">Sample Blog (Visitor)</a>
 		  </li>
 		  <li>
 		    <a href="#features">Features</a>
 		  </li>
 		  <li>
-		    <a href="https://www.webfilesys.de:443/arcoiris-blog/visitor/screenshots-arcoiris-1/07f3a11a-1058-436e-91e1-22dc34eed911" target="_blank">Screenshots</a>
+		    <a href="https://webfilesys.ddns.net:443/arcoiris-blog/visitor/screenshots-arcoiris-2/ad3f6b44-1707-4fa0-a946-a8489595f0c2" target="_blank">Screenshots</a>
 		  </li>
 		  <li>
 		    <a href="distrib/releasenotes.html" target="_blank">Release Notes</a>
@@ -123,20 +125,14 @@
 
 	  <div class="mainText">
 
-        <h3>New in Release 2.21.0 (13 Feb 2021)</h3>
+        <h3>New in Release 3.2.1 (15.11.2026)</h3>
 
-        New overview page shows thumbnails of all blog pictures of all days.
-        <br/>
-        E-mail notification on new answers for comments.
-        <br/>
-        Share link to single blog picture.
-        <br/>
-        Waypoint support for GPX viewer.
+        Arcoiris Blog now available as <a href="https://hub.docker.com/r/fhodevelop/arcoiris-blog" target="_blank">docker image on docker hub</a>.
 	  
         <a name="features"><h2>Features</h2></a>
         <ul>
 		  <li>standard Java webapp to be deployed in any servlet container</li>
-		  <li>no database required - all data (except the pictures) are stored in cached XML files</li>
+		  <li>no database required - all data (except the pictures) are stored in cached JSON and XML files</li>
 		  <li>automatic downscaling of uploaded pictures to thumbnail and full blog size</li>
 		  <li>performance- and memory-optimized presentation of pictures (thumbnails first, replaced dynamically by full size on scroll)</li>
 		  <li>public URL for visitors</li>
@@ -206,7 +202,7 @@
         are using the Google Javascript XSLT library ajaxslt for partial page rendering.
         </p>
         <p>
-		arcoiris blog uses the Google Maps API to select and display geographic locations.
+		Arcoiris blog uses the OpenStreetMap API and the Google Maps API to select and display geographic locations and GPS tracks.
         </p>
         <p>
 		The icon font from Font Awesome (http://fortawesome.github.io/Font-Awesome) is included.
@@ -215,7 +211,7 @@
 		<a name="contact"><h2>Contact the author</h2></a>
 		
 		<p>
-		If you find a bug or have suggestions for improvements please contact the author at 
+		If you find a bug or have suggestions for improvements contact the author at 
 		<a href="mailto:frank_hoehnel@hotmail.com">frank_hoehnel@hotmail.com</a> .
 		</p>
 		
